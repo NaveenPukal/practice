@@ -7,6 +7,8 @@ import Subscribe from "./components/functionalComponent/Subscribe";
 import Counter from "./components/classComponent/Counter";
 import EventBind from "./components/classComponent/EventBind";
 import ParentComponent from "./components/classComponent/ParentComponent";
+import CallBackEx from "./components/callback/CallBackEx";
+import Varletconst from "./components/varLetConst/Varletconst";
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
       {/* <Subscribe /> */}
       {/* <Counter /> */}
       {/* <EventBind /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      {/* <CallBackEx /> */}
+      <Varletconst />
     </div>
   );
 }
