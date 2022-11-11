@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function ApiTest() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>Api</h1>
+    </div>
+  );
 }
