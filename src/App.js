@@ -9,6 +9,11 @@ import EventBind from "./components/classComponent/EventBind";
 import ParentComponent from "./components/classComponent/ParentComponent";
 import CallBackEx from "./components/callback/CallBackEx";
 import Varletconst from "./components/varLetConst/Varletconst";
+import Context from "./components/context/Context";
+import UseContext from "./components/context/UseContext";
+import UseMemo from "./components/useMemo/UseMemo";
+import UseCallBack from "./components/callback/UseCallBack";
+import ApiTest from "./components/api/ApiTest";
 
 function App() {
   return (
@@ -25,7 +30,12 @@ function App() {
       {/* <EventBind /> */}
       {/* <ParentComponent /> */}
       {/* <CallBackEx /> */}
-      <Varletconst />
+      {/* <Varletconst /> */}
+      {/* <Context /> */}
+      {/* <UseContext /> */}
+      {/* <UseMemo /> */}
+      {/* <UseCallBack /> */}
+      <ApiTest />
     </div>
   );
 }
