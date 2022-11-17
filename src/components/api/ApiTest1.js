@@ -1,30 +1,19 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 
-export default function ApiTest() {
+export default function ApiTest1() {
   const [data, setData] = useState([]);
-  useEffect(() => {
-    Axios.get("https://jsonplaceholder.typicode.com/posts/")
-      // Axios.get("https://jsonplaceholder.typicode.com/comments")
+  useEffect(async () => {
+    await Axios.get("https://jsonplaceholder.typicode.com/posts/")
+
       .then((res) => {
-        console.log("Getting from :::", res.data);
+        console.log(res.data);
         setData(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-
-  // const arr = data.map((data, index) => {
-  //   return (
-  //     <tr>
-  //       <td>{data.id}</td>
-  //       <td>{data.title}</td>
-  //       <td>{data.body}</td>
-  //     </tr>
-  //   );
-  // });
-
   return (
     <div>
       <table>
@@ -33,14 +22,13 @@ export default function ApiTest() {
           <th>Title</th>
           <th>Body</th>
         </tr>
-        {data.map((data, index) => (
+        {data.map((data) => (
           <tr>
             <td>{data.id}</td>
             <td>{data.title}</td>
             <td>{data.body}</td>
           </tr>
         ))}
-        {/* {arr} */}
       </table>
     </div>
   );
